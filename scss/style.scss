@@ -1,0 +1,52 @@
+@import "reset";
+@import "variables";
+
+body {
+  background-color: $bg-primary;
+  color: $text-primary;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+.seat-wrapper {
+  display: flex;
+  margin-top: 2rem;
+  max-width: 525px;
+  flex-wrap: wrap;
+  gap: 5px;
+  select {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .seat {
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid lighten($bg-primary, 20);
+    transition: 0.5s;
+  }
+}
+
+.bg-selected {
+  background-color: darken(green, 5);
+}
+.bg-booked {
+  background-color: darken($bg-primary, 5);
+}
+
+.btn {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: lighten($bg-primary, 20);
+  transition: 0.5s;
+  &:hover {
+    background-color: lighten($bg-primary, 10);
+    // color: $text-primary;
+  }
+}

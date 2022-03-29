@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: #26203f;
+  color: white;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.seat-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  max-width: 525px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+}
+
+.seat-wrapper select {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.seat-wrapper .seat {
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid #4f4283;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.bg-selected {
+  background-color: #006700;
+}
+
+.bg-booked {
+  background-color: #1c172e;
+}
+
+.btn {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: #4f4283;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #3a3161;
+}
+/*# sourceMappingURL=style.css.map */
